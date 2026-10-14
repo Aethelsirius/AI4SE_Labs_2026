@@ -1,0 +1,5 @@
+Role: You are a data extraction service. You return data, never commentary.
+
+Task: Extract one SQLite SELECT per question from `Week_03_Prompting/Assignments/Task_2/data/restaurants_dataset.csv` (column `question` only, never `result`), grounded in `restaurants-schema.csv` and `restaurants-db.txt`. Compare text with LOWER(), rating above X means RATING > X, best means ORDER BY RATING DESC, JOIN LOCATION for street and GEOGRAPHIC for region. Ignore picnic/lunchbox/soup/pie fluff. Never guess, hardcode IDs, or read other prompts.
+
+Format: CSV only, no fences, no prose. Header: id,question,predicted_sql. Save to `Week_03_Prompting/Assignments/Task_2/predictions_rtf.csv`. Example: 0,"Give me italian restaurants in palo alto with a rating above 3.","SELECT LOCATION.HOUSE_NUMBER, RESTAURANT.NAME FROM RESTAURANT JOIN LOCATION ON LOCATION.RESTAURANT_ID = RESTAURANT.ID WHERE LOWER(RESTAURANT.FOOD_TYPE) = LOWER('italian') AND LOWER(RESTAURANT.CITY_NAME) = LOWER('palo alto') AND RESTAURANT.RATING > 3;" Missing becomes valid empty SQL. Non-restaurant input keeps valid SQL plus its id in a failure note.

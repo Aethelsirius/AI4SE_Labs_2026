@@ -1,0 +1,29 @@
+[
+  {
+    "prompt": "rtf",
+    "correct": 71,
+    "total": 155,
+    "accuracy": 0.45806451612903226,
+    "wall_seconds": 140.14955365999958,
+    "model_resolved": "gpt-5.6-luna",
+    "prompt_sha256": "f4243353b491a13121383c78df8744c2f5d2eeadd5b474b827458d9b83bb0c8f"
+  },
+  {
+    "prompt": "fewshot",
+    "correct": 75,
+    "total": 155,
+    "accuracy": 0.4838709677419355,
+    "wall_seconds": 115.66563388400027,
+    "model_resolved": "gpt-5.6-luna",
+    "prompt_sha256": "bdd4770888a74455189fb6a29b251613fc20ea9a8c447150242ffd16c49ca483"
+  },
+  {
+    "prompt": "cot",
+    "correct": 127,
+    "total": 155,
+    "accuracy": 0.8193548387096774,
+    "wall_seconds": 162.87025566600096,
+    "model_resolved": "gpt-5.6-luna",
+    "prompt_sha256": "031a38dda1f6c1b121484de09c96bcaa566771cdb26364e4489d8e3947ab8f6f"
+  }
+]

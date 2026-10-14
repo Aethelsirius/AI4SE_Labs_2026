@@ -1,0 +1,29 @@
+[
+  {
+    "prompt": "rtf",
+    "total": 155,
+    "n_wrong": 84,
+    "count_accuracy": 0.7935483870967742,
+    "wrong_median": 0.0,
+    "wrong_mean": 166.38095238095238,
+    "wrong_max": 6893
+  },
+  {
+    "prompt": "fewshot",
+    "total": 155,
+    "n_wrong": 80,
+    "count_accuracy": 0.8903225806451613,
+    "wrong_median": 0.0,
+    "wrong_mean": 35.725,
+    "wrong_max": 2696
+  },
+  {
+    "prompt": "cot",
+    "total": 155,
+    "n_wrong": 28,
+    "count_accuracy": 0.8193548387096774,
+    "wrong_median": 1.0,
+    "wrong_mean": 109.17857142857143,
+    "wrong_max": 2696
+  }
+]

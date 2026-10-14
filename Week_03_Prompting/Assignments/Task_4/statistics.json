@@ -1,0 +1,33 @@
+{
+  "alpha": 0.05,
+  "method": "exact McNemar (fair-coin) + Holm",
+  "pairs": [
+    {
+      "a": "rtf",
+      "b": "fewshot",
+      "a_only": 1,
+      "b_only": 5,
+      "p_raw": 0.21875,
+      "p_holm": 0.21875,
+      "significant": false
+    },
+    {
+      "a": "rtf",
+      "b": "cot",
+      "a_only": 5,
+      "b_only": 61,
+      "p_raw": 2.6307135723296904e-13,
+      "p_holm": 7.892140716989071e-13,
+      "significant": true
+    },
+    {
+      "a": "fewshot",
+      "b": "cot",
+      "a_only": 6,
+      "b_only": 58,
+      "p_raw": 9.029018960445001e-12,
+      "p_holm": 1.8058037920890002e-11,
+      "significant": true
+    }
+  ]
+}
